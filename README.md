@@ -33,3 +33,4 @@
     git clone https://github.com/KirillAyvazov/test_case_for_it_school_hello_world.git
 2. Перейдите в директорию проекта
 3. Выполните команду docker-compose up
+4. Перейдите по адресу http://localhost:8000/docs# для тестирования API
