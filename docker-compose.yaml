@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: hero_app
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  db:
+    container_name: hero_db
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=qwerty123
+      - POSTGRES_DB=hero
